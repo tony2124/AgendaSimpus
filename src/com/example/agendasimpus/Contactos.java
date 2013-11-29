@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Contactos extends Fragment implements OnClickListener{
@@ -16,6 +17,8 @@ public class Contactos extends Fragment implements OnClickListener{
 	public ActionBar action;
 	public Context contexto;
 	public Button btn1, btn2;
+	public ImageView up_down;
+	public boolean up2down=false;
 	
 	public Contactos(ActionBar c, Context context){
 		action=c;
@@ -33,10 +36,13 @@ public class Contactos extends Fragment implements OnClickListener{
 		
 		btn2 = (Button) vista.findViewById(R.id.button2);
 		btn2.setOnClickListener(this);
+		
+		up_down = (ImageView) vista.findViewById(R.id.up_down);
+		up_down.setOnClickListener(this);
 	
 		return vista;
 	}
-
+ 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -56,6 +62,20 @@ public class Contactos extends Fragment implements OnClickListener{
 				Toast.makeText(contexto, "Ocultar", Toast.LENGTH_SHORT).show();
 				action.hide();
 			break;
+			
+			case R.id.up_down:
+				if(up2down == false){
+					up2down=true;
+					action.hide();
+					up_down.setBackgroundResource(R.drawable.down);
+				} 
+				else{
+					up2down=false;
+					action.show();
+					up_down.setBackgroundResource(R.drawable.up);
+				}
+					
+				break;
 		}
 		
 	}

@@ -23,21 +23,31 @@ public final class R {
     public static final class drawable {
         public static final int add=0x7f020000;
         public static final int buscar=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int call=0x7f020002;
+        public static final int down=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int up=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f090004;
-        public static final int agregar=0x7f090006;
-        public static final int buscar=0x7f090005;
+        public static final int action_settings=0x7f09000a;
+        public static final int agregar=0x7f09000c;
+        public static final int buscar=0x7f09000b;
         public static final int button1=0x7f090002;
         public static final int button2=0x7f090003;
         public static final int fragment_container=0x7f090000;
-        public static final int textView1=0x7f090001;
+        public static final int imageView1=0x7f090009;
+        public static final int nombre=0x7f090007;
+        public static final int pic=0x7f090006;
+        public static final int row_lista=0x7f090005;
+        public static final int telefono=0x7f090008;
+        public static final int textView1=0x7f090004;
+        public static final int up_down=0x7f090001;
     }
     public static final class layout {
         public static final int activity_agenda__simpus=0x7f030000;
         public static final int contactos=0x7f030001;
         public static final int eventos=0x7f030002;
+        public static final int list_row=0x7f030003;
     }
     public static final class menu {
         public static final int agenda__simpus=0x7f080000;
